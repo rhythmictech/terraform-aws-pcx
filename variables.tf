@@ -1,25 +1,31 @@
 variable "name" {
-  default = "pcx"
-  type    = string
+  default     = "pcx"
+  description = "Name of peering connection resource"
+  type        = string
 }
 
 variable "peer_owner_id" {
-  type = string
+  description = "PCX Peer Owner Account ID"
+  type        = string
 }
 
 variable "peer_region" {
-  type = string
+  description = "PCX Peer Region"
+  type        = string
 }
 
 variable "peer_vpc_id" {
-  type = string
+  description = "PCX Peer VPC"
+  type        = string
 }
 
 variable "tags" {
-  default = {}
-  type    = map(string)
+  default     = {}
+  description = "Tags to add to supported resources"
+  type        = map(string)
 }
 
 variable "vpc_id" {
-  type = string
+  description = "PCX VPC"
+  type        = string
 }
